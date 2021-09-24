@@ -27,4 +27,17 @@ public class HotelReservation {
     public boolean addHotel(Hotel hotel) {
         return this.hotels.add(hotel);
     }
+
+    /**
+     * This method is used to find the cheapest rates of the hotels
+     */
+    public void findCheapestHotel(){
+        int LakeWoodRate = 110;
+        int BridgeWoodRate = 160;
+        int RidgeWoodRate = 220;
+        int cheapestHotel = (LakeWoodRate > BridgeWoodRate) ?
+                (LakeWoodRate > RidgeWoodRate ? LakeWoodRate : RidgeWoodRate) :
+                (BridgeWoodRate > RidgeWoodRate ? BridgeWoodRate : RidgeWoodRate);
+        System.out.println("The cheapest hotel rate is : " + cheapestHotel);
+    }
 }

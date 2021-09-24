@@ -12,4 +12,9 @@ public class HotelReservationTest {
         Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Bridgewood", 160)));
         Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Ridgewood", 220)));
     }
+
+    @Test
+    void toFindTheCheapestHotel() {
+        hotelReservation.findCheapestHotel();
+    }
 }
