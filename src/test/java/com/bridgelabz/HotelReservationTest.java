@@ -8,9 +8,9 @@ public class HotelReservationTest {
 
     @Test
     void givenHotelDetails_WhenAddedHotelDetails_ShouldReturnHotelDetails() {
-        Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Lakewood", 110)));
-        Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Bridgewood", 160)));
-        Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Ridgewood", 220)));
+        Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Lakewood", 110, 90)));
+        Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Bridgewood", 150, 50)));
+        Assertions.assertTrue(hotelReservation.addHotel(new Hotel("Ridgewood", 220, 150)));
     }
 
     @Test
